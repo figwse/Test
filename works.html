@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Works | Figwse Laboratory</title>
+    <title>Works | Figwse</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,7 +12,7 @@
         .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(251, 146, 60, 0.2); border-radius: 1.5rem; }
         .project-card:hover img { transform: scale(1.05); }
         /* Easter Egg Class */
-        .gravity-chaos * { animation: fall 4s forwards; pointer-events: none; }
+        .gravity-NA * { animation: fall 4s forwards; pointer-events: none; }
         @keyframes fall { to { transform: translateY(100vh) rotate(20deg); opacity: 0; } }
     </style>
 </head>
@@ -20,12 +20,12 @@
 
     <nav class="fixed top-0 left-0 w-full z-50 p-6 flex justify-center space-x-8 text-sm font-bold uppercase tracking-widest bg-white/30 backdrop-blur-lg border-b border-orange-100">
         <a href="index.html" class="hover:text-orange-500 transition-colors">Home</a>
-        <a href="#projects" class="text-orange-600">Selected Works</a>
+        <a href="#projects" class="text-orange-600">Works</a>
     </nav>
 
     <header class="pt-32 pb-10 text-center">
-        <h1 id="works-title" class="text-6xl font-black text-slate-800 cursor-pointer select-none">Project <span class="text-pink-500">Lab</span>.</h1>
-        <p class="text-slate-500 mt-2">A collection of digital experiments and designs.</p>
+        <h1 id="works-title" class="text-6xl font-black text-slate-800 cursor-pointer select-none">Wor<span class="text-pink-500">ks</span>.</h1>
+        <p class="text-slate-500 mt-2">These are all my works as of now.</p>
     </header>
 
     <main id="projects" class="max-w-6xl mx-auto px-6 space-y-16 pb-24">
@@ -38,35 +38,12 @@
                 </div>
                 <div class="p-10 flex flex-col justify-center space-y-4">
                     <div class="flex justify-between items-start">
-                        <h2 class="text-3xl font-bold text-slate-800">Quantum UI System</h2> <span class="bg-orange-100 text-orange-600 text-xs px-3 py-1 rounded-full font-bold">FIGMA</span>
+                        <h2 class="text-3xl font-bold text-slate-800">This Website.</h2> <span class="bg-orange-100 text-orange-600 text-xs px-3 py-1 rounded-full font-bold">FIGMA</span>
                     </div>
                     <p class="text-slate-600 leading-relaxed">
-                        An exploration into simple, adaptive design systems. I focused on visual hierarchy and 
-                        clean spacing to make complex data look accessible. </p>
-                    <a href="https://yourlink.com" target="_blank" class="inline-block text-orange-500 font-bold hover:translate-x-2 transition-transform">
-                        Explore Project <i class="fas fa-arrow-right ml-2"></i> </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="glass overflow-hidden project-card transition-all" data-aos="fade-up">
-            <div class="grid md:grid-cols-2">
-                <div class="h-64 md:h-auto overflow-hidden md:order-2">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800" 
-                         alt="Project Image" class="w-full h-full object-cover transition-transform duration-500">
-                </div>
-                <div class="p-10 flex flex-col justify-center space-y-4 md:order-1">
-                    <div class="flex justify-between items-start">
-                        <h2 class="text-3xl font-bold text-slate-800">Python Automation Scripts</h2>
-                        <span class="bg-pink-100 text-pink-600 text-xs px-3 py-1 rounded-full font-bold">PYTHON</span>
-                    </div>
-                    <p class="text-slate-600 leading-relaxed">
-                        A series of custom scripts designed to organize messy datasets and automate repetitive 
-                        tasks in school projects. Efficiency meets design.
-                    </p>
-                    <a href="#" class="inline-block text-pink-500 font-bold hover:translate-x-2 transition-transform">
-                        View Codebase <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
+                        I built this website to show my works from here on. All the works here including this was and is built by me. This is just a project for fun :) . </p>
+                    <a href="https://figwse.github.io/Test/" target="_blank" class="inline-block text-orange-500 font-bold hover:translate-x-2 transition-transform">
+                        Link to Main site again lol <i class="fas fa-arrow-right ml-2"></i> </a>
                 </div>
             </div>
         </section>
@@ -74,7 +51,7 @@
     </main>
 
     <footer class="text-center py-10 border-t border-orange-100">
-        <p class="text-slate-400 text-sm">Typing "CHAOS" might be a bad idea...</p>
+        <p class="text-slate-400 text-sm">NA again</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -99,12 +76,12 @@
             setTimeout(() => emoji.remove(), 2500);
         });
 
-        // EASTER EGG 2: The "CHAOS" Key
+        // EASTER EGG 2: The "NA" Key
         let typed = "";
         window.addEventListener('keyup', (e) => {
             typed += e.key.toUpperCase();
-            if (typed.endsWith("CHAOS")) {
-                document.body.classList.add('gravity-chaos');
+            if (typed.endsWith("NA")) {
+                document.body.classList.add('gravity-NA');
                 alert("The Lab has exploded. 💥");
                 setTimeout(() => location.reload(), 4000);
             }
