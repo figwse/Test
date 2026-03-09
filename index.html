@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Interactive Resume</title>
+    <title>Figwse resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -23,13 +23,13 @@
 
     <header id="about" class="mt-20 flex flex-col items-center text-center py-20" data-aos="fade-down">
         <div class="relative group">
-            <img id="profile-pic" src="https://via.placeholder.com/150" alt="Profile" 
+            <img id="profile-pic" src="eac160f5dbfdd87820997db28c5526bd.jpg" alt="Profile" 
                  class="w-32 h-32 rounded-full border-4 border-cyan-500 cursor-pointer transition-transform hover:scale-110">
             <p class="text-xs mt-2 text-slate-500 opacity-0 group-hover:opacity-100 transition">Click me for a surprise!</p>
         </div>
 
-        <h1 class="text-5xl font-bold mt-4 tracking-tighter">YOUR NAME</h1>
-        <p class="text-cyan-400 text-xl font-mono mt-2 uppercase tracking-widest">Digital Wizard / Developer</p>
+        <h1 class="text-5xl font-bold mt-4 tracking-tighter">Figwse</h1>
+        <p class="text-cyan-400 text-xl font-mono mt-2 uppercase tracking-widest">Developer</p>
     </header>
 
     <main class="max-w-4xl mx-auto space-y-12">
@@ -37,8 +37,9 @@
         <section class="glass p-8" data-aos="fade-up">
             <h2 class="text-2xl font-bold mb-4 border-b border-cyan-500 inline-block">About Me</h2>
             <p class="text-slate-300 leading-relaxed">
-                I am a passionate creator who loves turning coffee into code. I specialize in building things that look great and work even better. 
-                Keep scrolling to see the magic.
+                I am a student who is in his long term and working towards a good university. I am good at design, Python and SQL(scored 95/100), 
+                figma. I am aware of how to use many softwares ranging from canva to blender although i am rusty and it might take some time to 
+                get back in form.
             </p>
         </section>
 
@@ -48,13 +49,12 @@
             <div class="glass p-6 transition-all hover:bg-white/10" data-aos="fade-up">
                 <div class="flex justify-between items-start">
                     <div>
-                        <h3 class="text-xl font-bold text-cyan-400">Job Title @ Company Name</h3>
-                        <p class="text-sm text-slate-400 italic">Jan 2024 - Present</p>
+                        <h3 class="text-xl font-bold text-cyan-400">School and collage</h3>
                     </div>
                 </div>
                 <ul class="list-disc list-inside mt-4 text-slate-300 space-y-2">
-                    <li>Led a team of awesome people to build an even more awesome app.</li>
-                    <li>Reduced bug reports by 50% using sheer willpower and some testing.</li>
+                    <li>Led a team of awesome people to make different projects on computer science, physics, chemistry,etc.</li>
+                    <li>I am known for making my projects look visually good</li>
                 </ul>
             </div>
         </section>
@@ -63,15 +63,33 @@
             <h2 class="text-2xl font-bold mb-6">Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                    <div class="flex justify-between mb-1"><span>JavaScript</span><span>90%</span></div>
+                    <div class="flex justify-between mb-1"><span>Python</span><span>70%</span></div>
                     <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
-                        <div class="bg-cyan-500 h-full" style="width: 90%"></div>
+                        <div class="bg-cyan-500 h-full" style="width: 70%"></div>
                     </div>
                 </div>
                 <div>
-                    <div class="flex justify-between mb-1"><span>Design</span><span>75%</span></div>
+                    <div class="flex justify-between mb-1"><span>Design</span><span>90%</span></div>
                     <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
-                        <div class="bg-purple-500 h-full" style="width: 75%"></div>
+                        <div class="bg-purple-500 h-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1"><span>SQL</span><span>60%</span></div>
+                    <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                        <div class="bg-cyan-500 h-full" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1"><span>Pattern Recognition</span><span>80%</span></div>
+                    <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                        <div class="bg-purple-500 h-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1"><span>Analysis and organisation of data</span><span>90%</span></div>
+                    <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                        <div class="bg-cyan-500 h-full" style="width: 90%"></div>
                     </div>
                 </div>
             </div>
@@ -80,8 +98,8 @@
     </main>
 
     <footer class="text-center py-20 text-slate-500 text-sm">
-        <p>© 2026 Your Name • Built with ⚡ and Hidden Easter Eggs</p>
-        <p class="mt-2 italic">Try typing "MAGIC" on your keyboard...</p>
+        <p>© 2026 Figwse • Built with HTML</p>
+        <p class="mt-2 italic">BANA__??</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -101,7 +119,7 @@
         let input = "";
         window.addEventListener('keyup', (e) => {
             input += e.key.toUpperCase();
-            if (input.includes("MAGIC")) {
+            if (input.includes("NA")) {
                 document.body.classList.toggle('secret-active');
                 input = "";
                 console.log("🎨 Theme Toggled!");
