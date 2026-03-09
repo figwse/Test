@@ -77,13 +77,13 @@
                 <div>
                     <div class="flex justify-between mb-1"><span>SQL</span><span>60%</span></div>
                     <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
-                        <div class="bg-cyan-500 h-full" style="width: 60%"></div>
+                        <div class="bg-purple-500 h-full" style="width: 60%"></div>
                     </div>
                 </div>
                 <div>
                     <div class="flex justify-between mb-1"><span>Pattern Recognition</span><span>80%</span></div>
                     <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
-                        <div class="bg-purple-500 h-full" style="width: 80%"></div>
+                        <div class="bg-cyan-500 h-full" style="width: 80%"></div>
                     </div>
                 </div>
                 <div>
@@ -104,18 +104,13 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialize Scroll Animations
         AOS.init({ duration: 1000, once: false });
-
-        // EASTER EGG 1: The Profile Click
         const profile = document.getElementById('profile-pic');
         profile.addEventListener('click', () => {
             alert("🚀 Achievement Unlocked: You found the secret button!");
             profile.classList.add('animate-spin');
             setTimeout(() => profile.classList.remove('animate-spin'), 1000);
         });
-
-        // EASTER EGG 2: The Konami/Secret Code
         let input = "";
         window.addEventListener('keyup', (e) => {
             input += e.key.toUpperCase();
@@ -125,8 +120,6 @@
                 console.log("🎨 Theme Toggled!");
             }
         });
-
-        // EASTER EGG 3: Inspect Element Message
         console.log("%cHey there, Developer!", "color: #22d3ee; font-size: 20px; font-weight: bold;");
         console.log("Looking for my secrets? You're on the right track.");
     </script>
