@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1rem; }
+        .secret-active { filter: invert(1) hue-rotate(180deg); transition: 1s; }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+    <nav class="fixed top-0 left-0 w-full z-50 p-4 flex justify-center space-x-6 text-sm uppercase tracking-widest bg-slate-900/50 backdrop-blur-md">
+        <a href="#about" class="hover:text-cyan-400">About</a>
+        <a href="#experience" class="hover:text-cyan-400">Experience</a>
+        <a href="#skills" class="hover:text-cyan-400">Skills</a>
+    </nav>
+
+    <header id="about" class="mt-20 flex flex-col items-center text-center py-20" data-aos="fade-down">
+        <div class="relative group">
+            <img id="profile-pic" src="https://via.placeholder.com/150" alt="Profile" 
+                 class="w-32 h-32 rounded-full border-4 border-cyan-500 cursor-pointer transition-transform hover:scale-110">
+            <p class="text-xs mt-2 text-slate-500 opacity-0 group-hover:opacity-100 transition">Click me for a surprise!</p>
+        </div>
+
+        <h1 class="text-5xl font-bold mt-4 tracking-tighter">YOUR NAME</h1>
+        <p class="text-cyan-400 text-xl font-mono mt-2 uppercase tracking-widest">Digital Wizard / Developer</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto space-y-12">
+
+        <section class="glass p-8" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-4 border-b border-cyan-500 inline-block">About Me</h2>
+            <p class="text-slate-300 leading-relaxed">
+                I am a passionate creator who loves turning coffee into code. I specialize in building things that look great and work even better. 
+                Keep scrolling to see the magic.
+            </p>
+        </section>
+
+        <section id="experience" class="space-y-6">
+            <h2 class="text-2xl font-bold mb-4" data-aos="fade-right">Experience</h2>
+            
+            <div class="glass p-6 transition-all hover:bg-white/10" data-aos="fade-up">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-cyan-400">Job Title @ Company Name</h3>
+                        <p class="text-sm text-slate-400 italic">Jan 2024 - Present</p>
+                    </div>
+                </div>
+                <ul class="list-disc list-inside mt-4 text-slate-300 space-y-2">
+                    <li>Led a team of awesome people to build an even more awesome app.</li>
+                    <li>Reduced bug reports by 50% using sheer willpower and some testing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="glass p-8" data-aos="zoom-in">
+            <h2 class="text-2xl font-bold mb-6">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <div class="flex justify-between mb-1"><span>JavaScript</span><span>90%</span></div>
+                    <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                        <div class="bg-cyan-500 h-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1"><span>Design</span><span>75%</span></div>
+                    <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                        <div class="bg-purple-500 h-full" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-20 text-slate-500 text-sm">
+        <p>© 2026 Your Name • Built with ⚡ and Hidden Easter Eggs</p>
+        <p class="mt-2 italic">Try typing "MAGIC" on your keyboard...</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Scroll Animations
+        AOS.init({ duration: 1000, once: false });
+
+        // EASTER EGG 1: The Profile Click
+        const profile = document.getElementById('profile-pic');
+        profile.addEventListener('click', () => {
+            alert("🚀 Achievement Unlocked: You found the secret button!");
+            profile.classList.add('animate-spin');
+            setTimeout(() => profile.classList.remove('animate-spin'), 1000);
+        });
+
+        // EASTER EGG 2: The Konami/Secret Code
+        let input = "";
+        window.addEventListener('keyup', (e) => {
+            input += e.key.toUpperCase();
+            if (input.includes("MAGIC")) {
+                document.body.classList.toggle('secret-active');
+                input = "";
+                console.log("🎨 Theme Toggled!");
+            }
+        });
+
+        // EASTER EGG 3: Inspect Element Message
+        console.log("%cHey there, Developer!", "color: #22d3ee; font-size: 20px; font-weight: bold;");
+        console.log("Looking for my secrets? You're on the right track.");
+    </script>
+</body>
+</html>
